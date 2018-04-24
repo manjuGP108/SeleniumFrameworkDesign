@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using SeleniumFrameWorkDesign;
 using TestSolution.Actions;
@@ -8,6 +9,8 @@ namespace TestSolution
     [TestClass]
     public class RegressionTestCases
     {
+        public TestContext TestContext { get; set; }
+
         [TestInitialize]
         public void TestInitialize()
         {
@@ -24,15 +27,23 @@ namespace TestSolution
         [TestMethod]
         public void TestCase()
         {
-            string firstName = "Manjunath";
+            var firstName = "Manjunath";
             PropertiesCollection.Driver.Manage().Window.Maximize();
-            PracticeFormActions practiceForm = new PracticeFormActions();
+            var practiceForm = new PracticeFormActions();
             practiceForm.EnterFirstName(firstName);
             practiceForm.ValidateFirstName(firstName);
             practiceForm.SelectContinent("Africa");
             practiceForm.VerifyContinentDropDownListElements();
-            Practice_TableActions practiceTable = practiceForm.ClickOnLinkText();
+            var practiceTable = practiceForm.ClickOnLinkText();
             practiceTable.ValidateTableHeaders();
+        }
+
+        [DeploymentItem("TextFile1.csv")]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\TextFile1.csv", "TextFile1#csv", DataAccessMethod.Sequential)]
+        [TestMethod]
+        public void test1()
+        {
+            var name = TestContext.DataRow["ï»¿Name"].ToString();
         }
     }
 }
