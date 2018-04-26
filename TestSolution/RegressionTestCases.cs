@@ -19,7 +19,7 @@ namespace TestSolution
         [TestCleanup]
         public void TestCleanUp()
         {
-            PropertiesCollection.Driver.Close();
+            //PropertiesCollection.Driver.Close();
         }
 
         [TestMethod]
@@ -46,8 +46,12 @@ namespace TestSolution
         public void test_data_driven_testing()
         {
             var name = TestContext.DataRow["Name"].ToString();
-
-            //testing test
+            if (name == "Manju")
+                Assert.AreEqual("Africa", TestContext.DataRow["Continents"].ToString());
+            else if (name == "Satish")
+                Assert.AreEqual("Asia", TestContext.DataRow["Continents"].ToString());
+            else
+                Assert.AreEqual("Europe", TestContext.DataRow["Continents"].ToString());
         }
     }
 }
