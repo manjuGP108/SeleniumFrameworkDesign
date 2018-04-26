@@ -10,3 +10,15 @@ C:\Users\KHN2\Desktop\SeleniumFrameWorkDesign\SeleniumFrameWorkDesign\bin\Debug\
 C:\Users\KHN2\Desktop\SeleniumFrameWorkDesign\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.csprojResolveAssemblyReference.cache
 C:\Users\KHN2\Desktop\SeleniumFrameWorkDesign\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.dll
 C:\Users\KHN2\Desktop\SeleniumFrameWorkDesign\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.pdb
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\SeleniumFrameWorkDesign.dll.config
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\SeleniumFrameWorkDesign.dll
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\SeleniumFrameWorkDesign.pdb
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\WebDriver.dll
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\WebDriver.Support.dll
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\WebDriver.xml
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\WebDriver.Support.xml
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.csprojResolveAssemblyReference.cache
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.dll
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.pdb

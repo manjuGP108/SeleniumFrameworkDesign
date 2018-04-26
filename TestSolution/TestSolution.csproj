@@ -86,8 +86,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="TextFile1.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <None Include="DataDrivenTesting.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
