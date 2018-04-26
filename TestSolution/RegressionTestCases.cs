@@ -1,9 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium.Chrome;
 using SeleniumFrameWorkDesign;
 using TestSolution.Actions;
 
 namespace TestSolution
 {
+    [DeploymentItem(@"Driver")]
     [TestClass]
     public class RegressionTestCases
     {
@@ -12,14 +14,14 @@ namespace TestSolution
         [TestInitialize]
         public void TestInitialize()
         {
-            //PropertiesCollection.Driver = new ChromeDriver();
-            //PropertiesCollection.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
+            PropertiesCollection.Driver = new ChromeDriver();
+            PropertiesCollection.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
         }
 
         [TestCleanup]
         public void TestCleanUp()
         {
-            //PropertiesCollection.Driver.Close();
+            PropertiesCollection.Driver.Close();
         }
 
         [TestMethod]
@@ -37,12 +39,8 @@ namespace TestSolution
         }
 
         [DeploymentItem("DataDrivenTesting.csv")]
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
-            "|DataDirectory|\\DataDrivenTesting.csv", "DataDrivenTesting#csv", DataAccessMethod.Sequential)]
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\DataDrivenTesting.csv", "DataDrivenTesting#csv", DataAccessMethod.Sequential)]
         [TestMethod]
-        //[DeploymentItem("TextFile1.csv")]
-        //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\TextFile1.csv", "TextFile1#csv", DataAccessMethod.Sequential)]
-        //[TestMethod]
         public void test_data_driven_testing()
         {
             var name = TestContext.DataRow["Name"].ToString();

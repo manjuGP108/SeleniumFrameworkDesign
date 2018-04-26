@@ -43,6 +43,7 @@ C:\GitRipositories\SeleniumFrameWorkDesign\TestSolution\bin\Debug\Microsoft.Visu
 C:\GitRipositories\SeleniumFrameWorkDesign\TestSolution\obj\Debug\TestSolution.csprojResolveAssemblyReference.cache
 C:\GitRipositories\SeleniumFrameWorkDesign\TestSolution\obj\Debug\TestSolution.dll
 C:\GitRipositories\SeleniumFrameWorkDesign\TestSolution\obj\Debug\TestSolution.pdb
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\DataDrivenTesting.csv
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\TestSolution.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\TestSolution.pdb
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
@@ -65,4 +66,4 @@ C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Microsoft.Visua
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.csprojResolveAssemblyReference.cache
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.pdb
-C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\DataDrivenTesting.csv
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Driver\chromedriver.exe
