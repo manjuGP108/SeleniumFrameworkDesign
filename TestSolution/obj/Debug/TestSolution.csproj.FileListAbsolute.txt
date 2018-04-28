@@ -43,6 +43,7 @@ C:\GitRipositories\SeleniumFrameWorkDesign\TestSolution\bin\Debug\Microsoft.Visu
 C:\GitRipositories\SeleniumFrameWorkDesign\TestSolution\obj\Debug\TestSolution.csprojResolveAssemblyReference.cache
 C:\GitRipositories\SeleniumFrameWorkDesign\TestSolution\obj\Debug\TestSolution.dll
 C:\GitRipositories\SeleniumFrameWorkDesign\TestSolution\obj\Debug\TestSolution.pdb
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Driver\chromedriver.exe
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\DataDrivenTesting.csv
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\TestSolution.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\TestSolution.pdb
@@ -51,6 +52,8 @@ C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Microsoft.Visua
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\SeleniumFrameWorkDesign.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\WebDriver.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\WebDriver.Support.dll
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.dll
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.DataSet.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\UiaComWrapper.dll
@@ -61,13 +64,10 @@ C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Microsoft.Visua
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\WebDriver.xml
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\WebDriver.Support.xml
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.xml
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.DataSet.xml
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Extension.xml
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Microsoft.VisualStudio.TestTools.UITest.Common.xml
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.csprojResolveAssemblyReference.cache
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.pdb
-C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Driver\chromedriver.exe
-C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.dll
-C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.DataSet.dll
-C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.xml
-C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.DataSet.xml

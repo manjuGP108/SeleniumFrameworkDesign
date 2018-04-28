@@ -55,7 +55,7 @@ namespace TestSolution
         [TestMethod]
         public void data_driven_testing_from_excel_sheet()
         {
-            ExcelUtil.PopulateInCollection(@"C:\Users\KHN2\Desktop\DataDrivenTesting.xlsx");
+            ExcelUtil.PopulateInCollection(@"C:\GIT clone repository\SeleniumFramework\TestSolution\Objects\DataDrivenTesting.xlsx");
             var continent = ExcelUtil.ReadData(1, "Name");
             Assert.AreEqual("Manju", continent);
         }
