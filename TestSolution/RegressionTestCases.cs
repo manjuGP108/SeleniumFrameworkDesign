@@ -14,8 +14,8 @@ namespace TestSolution
         [TestInitialize]
         public void TestInitialize()
         {
-            PropertiesCollection.Driver = new ChromeDriver();
-            PropertiesCollection.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
+            //PropertiesCollection.Driver = new ChromeDriver();
+            //PropertiesCollection.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
         }
 
         [TestCleanup]
@@ -50,6 +50,14 @@ namespace TestSolution
                 Assert.AreEqual("Asia", TestContext.DataRow["Continents"].ToString());
             else
                 Assert.AreEqual("Europe", TestContext.DataRow["Continents"].ToString());
+        }
+
+        [TestMethod]
+        public void data_driven_testing_from_excel_sheet()
+        {
+            ExcelUtil.PopulateInCollection(@"C:\Users\KHN2\Desktop\DataDrivenTesting.xlsx");
+            var continent = ExcelUtil.ReadData(1, "Name");
+            Assert.AreEqual("Manju", continent);
         }
     }
 }

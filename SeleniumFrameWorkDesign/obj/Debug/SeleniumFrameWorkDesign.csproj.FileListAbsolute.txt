@@ -22,3 +22,7 @@ C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\WebD
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.csprojResolveAssemblyReference.cache
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.dll
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.pdb
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\ExcelDataReader.DataSet.dll
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\ExcelDataReader.dll
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\ExcelDataReader.xml
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\ExcelDataReader.DataSet.xml

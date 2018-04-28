@@ -67,3 +67,7 @@ C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.cs
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.pdb
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Driver\chromedriver.exe
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.dll
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.DataSet.dll
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.xml
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\ExcelDataReader.DataSet.xml
