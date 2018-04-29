@@ -14,8 +14,8 @@ namespace TestSolution
         [TestInitialize]
         public void TestInitialize()
         {
-            //PropertiesCollection.Driver = new ChromeDriver();
-            //PropertiesCollection.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
+            PropertiesCollection.Driver = new ChromeDriver();
+            PropertiesCollection.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
         }
 
         [TestCleanup]
@@ -55,9 +55,27 @@ namespace TestSolution
         [TestMethod]
         public void data_driven_testing_from_excel_sheet()
         {
-            ExcelUtil.PopulateInCollection(@"C:\GIT clone repository\SeleniumFramework\TestSolution\Objects\DataDrivenTesting.xlsx");
-            var continent = ExcelUtil.ReadData(1, "Name");
+            ExcelUtility.PopulateInCollection(@"C:\GIT clone repository\SeleniumFramework\TestSolution\Objects\DataDrivenTesting.xlsx");
+            var continent = ExcelUtility.ReadData(1, "Name");
             Assert.AreEqual("Manju", continent);
+        }
+
+        [TestMethod]
+        public void tead_the_table_elements_from_table_utility()
+        {
+            var practiceForm = new PracticeFormActions();
+            var practiceTable = practiceForm.ClickOnLinkText();
+            practiceTable.ValidateTableCellValues();
+        }
+
+        [TestMethod]
+        public void w3schools_table()
+        {
+            //PropertiesCollection.Driver.Close();
+            PropertiesCollection.Driver = new ChromeDriver();
+            PropertiesCollection.Driver.Navigate().GoToUrl("https://www.w3schools.com/html/html_tables.asp");
+            var w3Schools = new w3SchoolsPageActions();
+            w3Schools.GetContractPersonOfThirdRow();
         }
     }
 }

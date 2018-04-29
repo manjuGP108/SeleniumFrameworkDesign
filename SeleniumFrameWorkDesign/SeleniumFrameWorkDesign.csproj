@@ -72,11 +72,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExcelUtil.cs" />
+    <Compile Include="ExcelUtility.cs" />
     <Compile Include="PropertiesCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeleniumGetMethods.cs" />
     <Compile Include="SeleniumSetMethods.cs" />
+    <Compile Include="TableUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

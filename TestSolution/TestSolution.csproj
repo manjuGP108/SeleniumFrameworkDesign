@@ -73,8 +73,10 @@
   <ItemGroup>
     <Compile Include="Actions\PracticeFormActions.cs" />
     <Compile Include="Actions\Practice_TableActions.cs" />
+    <Compile Include="Actions\w3SchoolsPageActions.cs" />
     <Compile Include="Objects\PracticeFormObjects.cs" />
     <Compile Include="Objects\Practice_TableObjects.cs" />
+    <Compile Include="Objects\w3SchoolsPageObjects.cs" />
     <Compile Include="RegressionTestCases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

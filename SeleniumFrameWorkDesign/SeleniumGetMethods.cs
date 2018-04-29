@@ -6,7 +6,6 @@ namespace SeleniumFrameWorkDesign
 {
     public static class SeleniumGetMethods
     {
-
         // Extention Methods.
         // We can make methods as extention methods by making class as Public Static and using the Keyword this with 
         // IWebElement for the WebElement Parameter in the methods.
@@ -36,12 +35,10 @@ namespace SeleniumFrameWorkDesign
 
         public static List<string> GetTableHeaders(this IWebElement tableHeader)
         {
-            var tableHeaderElements = new List<IWebElement>(tableHeader.FindElements(By.TagName("th")));
+            var tableHeaderElements = new List<IWebElement>(tableHeader.FindElement(By.TagName("thead")).FindElements(By.TagName("th")));
             var tableHeaderElementValues = new List<string>();
             foreach (var item in tableHeaderElements)
-            {
                 tableHeaderElementValues.Add(item.Text);
-            }
             return tableHeaderElementValues;
         }
     }
