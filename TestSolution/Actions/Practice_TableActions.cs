@@ -20,6 +20,8 @@ namespace TestSolution.Actions
         {
             var tableFirstRowSecondElement = _practiceTableObject.PracticeTable.GetTableCellValue(1, "Country");
             Assert.AreEqual("UAE", tableFirstRowSecondElement);
+            var tableSecondRowSecondElement = _practiceTableObject.PracticeTable.GetTableCellValue(2, 2);
+            Assert.AreEqual("Saudi Arabia", tableSecondRowSecondElement);
         }
     }
 }

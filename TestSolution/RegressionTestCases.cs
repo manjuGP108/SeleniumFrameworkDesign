@@ -14,8 +14,8 @@ namespace TestSolution
         [TestInitialize]
         public void TestInitialize()
         {
-            PropertiesCollection.Driver = new ChromeDriver();
-            PropertiesCollection.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
+            //PropertiesCollection.Driver = new ChromeDriver();
+            //PropertiesCollection.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
         }
 
         [TestCleanup]

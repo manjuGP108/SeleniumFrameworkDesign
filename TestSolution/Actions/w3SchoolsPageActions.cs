@@ -10,8 +10,10 @@ namespace TestSolution.Actions
 
         public void GetContractPersonOfThirdRow()
         {
-            var personName = w3SchoolPageObject.Table.GetTableCellValue(3, "Contract");
-            Assert.AreEqual("Ernst Handel", personName);
+            var personName = w3SchoolPageObject.Table.GetTableCellValue(3, "Contact");
+            Assert.AreEqual("Roland Mendel", personName);
+            var secondPersonName = w3SchoolPageObject.Table.GetTableCellValue(4, 2);
+            Assert.AreEqual("Helen Bennett", secondPersonName);
         }
     }
 }
