@@ -71,3 +71,5 @@ C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Microsoft.Visua
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.csprojResolveAssemblyReference.cache
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.dll
 C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.pdb
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Driver\geckodriver.exe
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Driver\IEDriverServer.exe

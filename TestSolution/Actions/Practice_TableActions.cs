@@ -7,7 +7,7 @@ namespace TestSolution.Actions
 {
     internal class Practice_TableActions
     {
-        private readonly Practice_TableObjects _practiceTableObject = new Practice_TableObjects();
+        private readonly PracticeTableObjects _practiceTableObject = new PracticeTableObjects();
 
         public void ValidateTableHeaders()
         {

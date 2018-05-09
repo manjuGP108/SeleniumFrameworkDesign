@@ -1,15 +1,13 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.PageObjects;
-using SeleniumFrameWorkDesign;
+using SeleniumFrameWorkDesign.Base;
 
 namespace TestSolution.Objects
 {
-    public class PracticeFormObjects
+    public class PracticeFormObjects : BasePage
     {
         //public PracticeFormObjects()
         //{
-        //    PageFactory.InitElements(PropertiesCollection.Driver, this);
+        //    PageFactory.InitElements(DriverContext.Driver, this);
         //}
 
         //[FindsBy(How = How.XPath, Using = "//*[@id='content']/div[1]/div/div/div/div[2]/div/form/fieldset/div[8]/input")]
@@ -21,16 +19,16 @@ namespace TestSolution.Objects
         //[FindsBy(How = How.LinkText, Using = "Link Test")]
         //public IWebElement LinkTextElement { get; set; }
 
-        private readonly RemoteWebDriver _driver;
-        public PracticeFormObjects()
-        {
-            _driver = PropertiesCollection.Driver;
-        }
-        public IWebElement FirstName => _driver.FindElementByXPath("//*[@id='content']/div[1]/div/div/div/div[2]/div/form/fieldset/div[8]/input");
+        //public PracticeFormObjects()
+        //{
+        //    _driver = DriverContext.Driver;
+        //}
 
-        public IWebElement Continents => _driver.FindElementById("continents");
 
-        public IWebElement LinkTextElement => _driver.FindElementByLinkText("Link Test");
+        public IWebElement FirstName => _driver.FindElement(By.XPath("//*[@id='content']/div[1]/div/div/div/div[2]/div/form/fieldset/div[8]/input"));
 
+        public IWebElement Continents => _driver.FindElement(By.Id("continents"));
+
+        public IWebElement LinkTextElement => _driver.FindElement(By.LinkText("Link Test"));
     }
 }

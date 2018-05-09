@@ -23,6 +23,6 @@ C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\Exce
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\WebDriver.xml
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\WebDriver.Support.xml
-C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.csprojResolveAssemblyReference.cache
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.dll
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.pdb
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.csprojResolveAssemblyReference.cache

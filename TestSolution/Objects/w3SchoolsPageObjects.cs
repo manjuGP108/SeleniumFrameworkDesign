@@ -1,18 +1,17 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using SeleniumFrameWorkDesign;
+using SeleniumFrameWorkDesign.Base;
 
 namespace TestSolution.Objects
 {
     public class w3SchoolsPageObjects
     {
-        private readonly RemoteWebDriver _driver;
+        private readonly IWebDriver _driver;
 
         public w3SchoolsPageObjects()
         {
-            _driver = PropertiesCollection.Driver;
+            _driver = DriverContext.Driver;
         }
 
-        public IWebElement Table => _driver.FindElementById("customers");
+        public IWebElement Table => _driver.FindElement(By.Id("customers"));
     }
 }

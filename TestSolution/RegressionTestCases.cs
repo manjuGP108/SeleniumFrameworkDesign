@@ -1,6 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
 using SeleniumFrameWorkDesign;
+using SeleniumFrameWorkDesign.Base;
 using TestSolution.Actions;
 
 namespace TestSolution
@@ -14,21 +16,21 @@ namespace TestSolution
         [TestInitialize]
         public void TestInitialize()
         {
-            //PropertiesCollection.Driver = new ChromeDriver();
-            //PropertiesCollection.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
+            DriverContext.Driver = new ChromeDriver();
+            DriverContext.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
         }
 
         [TestCleanup]
         public void TestCleanUp()
         {
-            PropertiesCollection.Driver.Close();
+            DriverContext.Driver.Close();
         }
 
         [TestMethod]
         public void TestCase()
         {
             var firstName = "Manjunath";
-            PropertiesCollection.Driver.Manage().Window.Maximize();
+            DriverContext.Driver.Manage().Window.Maximize();
             var practiceForm = new PracticeFormActions();
             practiceForm.EnterFirstName(firstName);
             practiceForm.ValidateFirstName(firstName);
@@ -71,9 +73,9 @@ namespace TestSolution
         [TestMethod]
         public void w3schools_table()
         {
-            //PropertiesCollection.Driver.Close();
-            PropertiesCollection.Driver = new ChromeDriver();
-            PropertiesCollection.Driver.Navigate().GoToUrl("https://www.w3schools.com/html/html_tables.asp");
+            //DriverContext.Driver.Close();
+            DriverContext.Driver = new FirefoxDriver();
+            DriverContext.Driver.Navigate().GoToUrl("https://www.w3schools.com/html/html_tables.asp");
             var w3Schools = new w3SchoolsPageActions();
             w3Schools.GetContractPersonOfThirdRow();
         }
