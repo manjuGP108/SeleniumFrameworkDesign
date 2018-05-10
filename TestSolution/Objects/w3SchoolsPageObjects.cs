@@ -3,7 +3,7 @@ using SeleniumFrameWorkDesign.Base;
 
 namespace TestSolution.Objects
 {
-    public class w3SchoolsPageObjects
+    public class w3SchoolsPageObjects : BasePage
     {
         private readonly IWebDriver _driver;
 

@@ -2,8 +2,10 @@
 
 namespace SeleniumFrameWorkDesign.Base
 {
-    public class DriverContext
+    public static class DriverContext
     {
         public static IWebDriver Driver { get; set; }
+
+        public static Browser Browser { get; set; }
     }
 }

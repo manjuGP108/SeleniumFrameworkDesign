@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.IE;
 using SeleniumFrameWorkDesign;
 using SeleniumFrameWorkDesign.Base;
 using TestSolution.Actions;
@@ -9,15 +10,36 @@ namespace TestSolution
 {
     [DeploymentItem(@"Driver")]
     [TestClass]
-    public class RegressionTestCases
+    public class RegressionTestCases : Base
     {
         public TestContext TestContext { get; set; }
 
         [TestInitialize]
         public void TestInitialize()
         {
-            DriverContext.Driver = new ChromeDriver();
-            DriverContext.Driver.Navigate().GoToUrl("http://toolsqa.com/automation-practice-form/");
+            OpenBrowser();
+            DriverContext.Browser.GoToUrl("http://toolsqa.com/automation-practice-form/");
+            DriverContext.Driver.Manage().Window.Maximize();
+        }
+
+        public void OpenBrowser(BrowserType browserType = BrowserType.Chrome)
+        {
+            switch (browserType)
+            {
+                case BrowserType.InternetExplorer:
+                    DriverContext.Driver = new InternetExplorerDriver();
+                    // For initializing Browser. So that we can access the methods in Browser classs such as GoToUrl
+                    DriverContext.Browser = new Browser(DriverContext.Driver);
+                    break;
+                case BrowserType.FireFox:
+                    DriverContext.Driver = new FirefoxDriver();
+                    DriverContext.Browser = new Browser(DriverContext.Driver);
+                    break;
+                case BrowserType.Chrome:
+                    DriverContext.Driver = new ChromeDriver();
+                    DriverContext.Browser = new Browser(DriverContext.Driver);
+                    break;
+            }
         }
 
         [TestCleanup]
@@ -30,14 +52,13 @@ namespace TestSolution
         public void TestCase()
         {
             var firstName = "Manjunath";
-            DriverContext.Driver.Manage().Window.Maximize();
-            var practiceForm = new PracticeFormActions();
-            practiceForm.EnterFirstName(firstName);
-            practiceForm.ValidateFirstName(firstName);
-            practiceForm.SelectContinent("Africa");
-            practiceForm.VerifyContinentDropDownListElements();
-            var practiceTable = practiceForm.ClickOnLinkText();
-            practiceTable.ValidateTableHeaders();
+            CurrentPage = GetInstance<PracticeFormActions>();
+            CurrentPage.As<PracticeFormActions>().EnterFirstName(firstName);
+            CurrentPage.As<PracticeFormActions>().ValidateFirstName(firstName);
+            CurrentPage.As<PracticeFormActions>().SelectContinent("Africa");
+            CurrentPage.As<PracticeFormActions>().VerifyContinentDropDownListElements();
+            CurrentPage = CurrentPage.As<PracticeFormActions>().ClickOnLinkText();
+            CurrentPage.As<PracticeTableActions>().ValidateTableHeaders();
         }
 
         [DeploymentItem("DataDrivenTesting.csv")]
