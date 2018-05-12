@@ -19,9 +19,9 @@ namespace TestSolution.Actions
 
         public void ValidateTableCellValues()
         {
-            var tableFirstRowSecondElement = _practiceTableObject.PracticeTable.GetTableCellValue(1, "Country");
+            var tableFirstRowSecondElement = _practiceTableObject.PracticeTable.GetTableCellValueWhenTableFirstColumnIsHeader(1, "Country");
             Assert.AreEqual("UAE", tableFirstRowSecondElement);
-            var tableSecondRowSecondElement = _practiceTableObject.PracticeTable.GetTableCellValue(2, 2);
+            var tableSecondRowSecondElement = _practiceTableObject.PracticeTable.GetTableCellValueWhenTableFirstColumnIsHeader(2, 1);
             Assert.AreEqual("Saudi Arabia", tableSecondRowSecondElement);
         }
     }

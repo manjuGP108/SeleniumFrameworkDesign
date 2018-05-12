@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
@@ -78,8 +79,9 @@ namespace TestSolution
         [TestMethod]
         public void data_driven_testing_from_excel_sheet()
         {
-            ExcelUtility.PopulateInCollection(@"C:\GIT clone repository\SeleniumFramework\TestSolution\Objects\DataDrivenTesting.xlsx");
-            var continent = ExcelUtility.ReadData(1, "Name");
+            var fileName = Environment.CurrentDirectory;
+            ExcelHelpers.PopulateInCollection(@"C:\GIT clone repository\SeleniumFramework\TestSolution\Objects\DataDrivenTesting.xlsx");
+            var continent = ExcelHelpers.ReadData(1, "Name");
             Assert.AreEqual("Manju", continent);
         }
 
@@ -95,7 +97,7 @@ namespace TestSolution
         public void w3schools_table()
         {
             //DriverContext.Driver.Close();
-            DriverContext.Driver = new FirefoxDriver();
+            DriverContext.Driver = new ChromeDriver();
             DriverContext.Driver.Navigate().GoToUrl("https://www.w3schools.com/html/html_tables.asp");
             var w3Schools = new w3SchoolsPageActions();
             w3Schools.GetContractPersonOfThirdRow();

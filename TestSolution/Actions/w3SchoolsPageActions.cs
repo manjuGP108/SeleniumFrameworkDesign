@@ -12,7 +12,7 @@ namespace TestSolution.Actions
         {
             var personName = w3SchoolPageObject.Table.GetTableCellValue(3, "Contact");
             Assert.AreEqual("Roland Mendel", personName);
-            var secondPersonName = w3SchoolPageObject.Table.GetTableCellValue(4, 2);
+            var secondPersonName = w3SchoolPageObject.Table.GetTableCellValue(4, 1);
             Assert.AreEqual("Helen Bennett", secondPersonName);
         }
     }

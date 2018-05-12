@@ -90,7 +90,9 @@
     <None Include="DataDrivenTesting.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Objects\DataDrivenTesting.xlsx" />
+    <None Include="Objects\DataDrivenTesting.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
