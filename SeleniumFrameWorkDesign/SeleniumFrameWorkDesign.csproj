@@ -78,6 +78,9 @@
     <Compile Include="Base\Browser.cs" />
     <Compile Include="Base\DriverContext.cs" />
     <Compile Include="Base\TestInitializeHook.cs" />
+    <Compile Include="Config\ConfigReader.cs" />
+    <Compile Include="Config\Settings.cs" />
+    <Compile Include="Helpers\DataHelperExtentions.cs" />
     <Compile Include="Helpers\ExcelHelpers.cs" />
     <Compile Include="Helpers\HtmlTableHelper.cs" />
     <Compile Include="Helpers\LogHelpers.cs" />
@@ -95,8 +98,12 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Config\" />
     <Folder Include="Extentions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\GlobalConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

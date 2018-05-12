@@ -74,3 +74,5 @@ C:\GIT clone repository\SeleniumFramework\TestSolution\obj\Debug\TestSolution.pd
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Driver\geckodriver.exe
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Driver\IEDriverServer.exe
 C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Objects\DataDrivenTesting.xlsx
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\TestSolution.dll.config
+C:\GIT clone repository\SeleniumFramework\TestSolution\bin\Debug\Config\GlobalConfig.xml

@@ -26,3 +26,4 @@ C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\WebD
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.dll
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.pdb
 C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\obj\Debug\SeleniumFrameWorkDesign.csprojResolveAssemblyReference.cache
+C:\GIT clone repository\SeleniumFramework\SeleniumFrameWorkDesign\bin\Debug\Config\GlobalConfig.xml

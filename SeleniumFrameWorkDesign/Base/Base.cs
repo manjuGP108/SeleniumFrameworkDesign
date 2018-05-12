@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using SeleniumFrameWorkDesign.Base;
 
 namespace SeleniumFrameWorkDesign.Base
 {

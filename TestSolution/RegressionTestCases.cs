@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
-using SeleniumFrameWorkDesign;
 using SeleniumFrameWorkDesign.Base;
+using SeleniumFrameWorkDesign.Config;
+using SeleniumFrameWorkDesign.Helpers;
 using TestSolution.Actions;
 
 namespace TestSolution
@@ -18,8 +20,10 @@ namespace TestSolution
         [TestInitialize]
         public void TestInitialize()
         {
+            LogHelpers.CreateLogFile();
+            ConfigReader.SetFrameworkSettings();
             OpenBrowser();
-            DriverContext.Browser.GoToUrl("http://toolsqa.com/automation-practice-form/");
+            DriverContext.Browser.GoToUrl(Settings.AUT);
             DriverContext.Driver.Manage().Window.Maximize();
         }
 
@@ -52,10 +56,9 @@ namespace TestSolution
         [TestMethod]
         public void TestCase()
         {
-            var firstName = "Manjunath";
             CurrentPage = GetInstance<PracticeFormActions>();
-            CurrentPage.As<PracticeFormActions>().EnterFirstName(firstName);
-            CurrentPage.As<PracticeFormActions>().ValidateFirstName(firstName);
+            CurrentPage.As<PracticeFormActions>().EnterFirstName(ConfigurationManager.AppSettings["UserName"]);
+            CurrentPage.As<PracticeFormActions>().ValidateFirstName(ConfigurationManager.AppSettings["UserName"]);
             CurrentPage.As<PracticeFormActions>().SelectContinent("Africa");
             CurrentPage.As<PracticeFormActions>().VerifyContinentDropDownListElements();
             CurrentPage = CurrentPage.As<PracticeFormActions>().ClickOnLinkText();

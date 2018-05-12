@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using ExcelDataReader;
 
-namespace SeleniumFrameWorkDesign
+namespace SeleniumFrameWorkDesign.Helpers
 {
     public class ExcelHelpers
     {

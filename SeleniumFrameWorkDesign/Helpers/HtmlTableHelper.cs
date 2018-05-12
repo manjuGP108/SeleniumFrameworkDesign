@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using OpenQA.Selenium;
 
-namespace SeleniumFrameWorkDesign
+namespace SeleniumFrameWorkDesign.Helpers
 {
     public static class HtmlTableHelper
     {

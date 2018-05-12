@@ -1,19 +1,20 @@
 ﻿using System;
 using System.IO;
 
-namespace SeleniumFrameWorkDesign
+namespace SeleniumFrameWorkDesign.Helpers
 {
     public class LogHelpers
     {
         //Global Declaration
-        private static string _logFileName = string.Format("{0:yyyymmddhhmmss}", DateTime.Now);
-        private static StreamWriter _streamw = null;
+        private static readonly string _logFileName = string.Format("{0:yyyymmddhhmmss}", DateTime.Now);
+
+        private static StreamWriter _streamw;
 
         //Create a file which can store the log information
         public static void CreateLogFile()
         {
-            string dir = @"e:\EAAutoFramework\";
-            if(Directory.Exists(dir))
+            var dir = @"C:\EAAutoFramework\";
+            if (Directory.Exists(dir))
             {
                 _streamw = File.AppendText(dir + _logFileName + ".log");
             }
@@ -25,7 +26,6 @@ namespace SeleniumFrameWorkDesign
         }
 
 
-
         //Create a method which can write the text in the log file
         public static void Write(string logMessage)
         {
@@ -33,7 +33,5 @@ namespace SeleniumFrameWorkDesign
             _streamw.WriteLine("    {0}", logMessage);
             _streamw.Flush();
         }
-
-
     }
 }

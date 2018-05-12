@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SeleniumFrameWorkDesign.Base
+﻿namespace SeleniumFrameWorkDesign.Base
 {
-    class TestInitializeHook
+    internal class TestInitializeHook
     {
     }
 }

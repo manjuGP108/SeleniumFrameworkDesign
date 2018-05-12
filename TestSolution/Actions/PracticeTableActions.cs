@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SeleniumFrameWorkDesign;
 using SeleniumFrameWorkDesign.Base;
+using SeleniumFrameWorkDesign.Helpers;
 using TestSolution.Objects;
 
 namespace TestSolution.Actions
