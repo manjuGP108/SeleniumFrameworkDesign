@@ -2,10 +2,7 @@
 using System.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.IE;
 using SeleniumFrameWorkDesign.Base;
-using SeleniumFrameWorkDesign.Config;
 using SeleniumFrameWorkDesign.Helpers;
 using TestSolution.Actions;
 
@@ -13,38 +10,13 @@ namespace TestSolution
 {
     [DeploymentItem(@"Driver")]
     [TestClass]
-    public class RegressionTestCases : Base
+    public class RegressionTestCases : HookInitialize
     {
         public TestContext TestContext { get; set; }
 
         [TestInitialize]
         public void TestInitialize()
         {
-            LogHelpers.CreateLogFile();
-            ConfigReader.SetFrameworkSettings();
-            OpenBrowser();
-            DriverContext.Browser.GoToUrl(Settings.AUT);
-            DriverContext.Driver.Manage().Window.Maximize();
-        }
-
-        public void OpenBrowser(BrowserType browserType = BrowserType.Chrome)
-        {
-            switch (browserType)
-            {
-                case BrowserType.InternetExplorer:
-                    DriverContext.Driver = new InternetExplorerDriver();
-                    // For initializing Browser. So that we can access the methods in Browser classs such as GoToUrl
-                    DriverContext.Browser = new Browser(DriverContext.Driver);
-                    break;
-                case BrowserType.FireFox:
-                    DriverContext.Driver = new FirefoxDriver();
-                    DriverContext.Browser = new Browser(DriverContext.Driver);
-                    break;
-                case BrowserType.Chrome:
-                    DriverContext.Driver = new ChromeDriver();
-                    DriverContext.Browser = new Browser(DriverContext.Driver);
-                    break;
-            }
         }
 
         [TestCleanup]

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using SeleniumFrameWorkDesign.Config;
 
 namespace SeleniumFrameWorkDesign.Helpers
 {
@@ -13,7 +14,7 @@ namespace SeleniumFrameWorkDesign.Helpers
         //Create a file which can store the log information
         public static void CreateLogFile()
         {
-            var dir = @"C:\EAAutoFramework\";
+            var dir = Settings.LogPath;
             if (Directory.Exists(dir))
             {
                 _streamw = File.AppendText(dir + _logFileName + ".log");

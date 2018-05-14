@@ -75,6 +75,7 @@
     <Compile Include="Actions\PracticeFormActions.cs" />
     <Compile Include="Actions\PracticeTableActions.cs" />
     <Compile Include="Actions\w3SchoolsPageActions.cs" />
+    <Compile Include="HookInitialize.cs" />
     <Compile Include="Objects\PracticeFormObjects.cs" />
     <Compile Include="Objects\Practice_TableObjects.cs" />
     <Compile Include="Objects\w3SchoolsPageObjects.cs" />

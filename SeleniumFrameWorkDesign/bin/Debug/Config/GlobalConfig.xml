@@ -9,7 +9,7 @@
     <TestType>RegressionTest</TestType>
     <!-- Possible Flag Y, N -->
     <IsLog>Y</IsLog>
-    <LogPath>D:\\EAAutoLogs\\</LogPath>
+    <LogPath>C:\\SeleniumFrameWorkDesignLogs\\</LogPath>
     <BuildName>DemoBuild</BuildName>
     <!-- Possible Flag Y, N -->
     <IsReport>N</IsReport>
