@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SeleniumFrameWorkDesign;
 using SeleniumFrameWorkDesign.Base;
+using SeleniumFrameWorkDesign.Extentions;
 using TestSolution.Objects;
 
 namespace TestSolution.Actions
@@ -12,6 +13,7 @@ namespace TestSolution.Actions
 
         public void EnterFirstName(string textBoxValue)
         {
+            _driver.WaitForDocumentLoaded();
             _practiceFormObject.FirstName.EnterTextBoxText(textBoxValue);
         }
 

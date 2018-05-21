@@ -8,7 +8,7 @@ namespace SeleniumFrameWorkDesign.Extentions
 {
     public static class WebDriverExtension
     {
-        internal static void WaitForDocumentLoaded(this IWebDriver driver)
+        public static void WaitForDocumentLoaded(this IWebDriver driver)
         {
             driver.WaitForCondition(drv =>
             {

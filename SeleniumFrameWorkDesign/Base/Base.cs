@@ -1,6 +1,5 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
-using SeleniumFrameWorkDesign.Base;
+﻿using System;
+using OpenQA.Selenium;
 
 namespace SeleniumFrameWorkDesign.Base
 {
@@ -12,12 +11,7 @@ namespace SeleniumFrameWorkDesign.Base
 
         protected TPage GetInstance<TPage>() where TPage : BasePage, new()
         {
-            var pageInstance = new TPage
-            {
-                _driver = DriverContext.Driver
-            };
-
-            return pageInstance;
+            return (TPage)Activator.CreateInstance(typeof(TPage));
         }
 
         public TPage As<TPage>() where TPage : BasePage
