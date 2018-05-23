@@ -1,4 +1,4 @@
-﻿using OpenQA.Selenium;
+﻿using System;
 
 namespace SeleniumFrameWorkDesign.Base
 {
@@ -7,7 +7,7 @@ namespace SeleniumFrameWorkDesign.Base
         public BasePage()
         {
             _driver = DriverContext.Driver;
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(300);
         }
-
     }
 }

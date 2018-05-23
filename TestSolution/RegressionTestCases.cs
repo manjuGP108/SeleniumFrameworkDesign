@@ -37,6 +37,18 @@ namespace TestSolution
             CurrentPage.As<PracticeTableActions>().ValidateTableHeaders();
         }
 
+        [TestMethod]
+        public void AJAXTestingTstCase()
+        {
+            CurrentPage = GetInstance<AjaxTestingHomePageActions>()
+                .ClickOnMenWatchesItem()
+                .ClickOnAddToCartButtonForFirstWatch()
+                .ClickOnViewCartInAlertWindow()
+                .ClickOnProceedToCheckOutButton()
+                .ShipToDiffrentAdress()
+                .ClickOnPlaceOrderButton();
+        }
+
         [DeploymentItem("DataDrivenTesting.csv")]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\DataDrivenTesting.csv", "DataDrivenTesting#csv", DataAccessMethod.Sequential)]
         [TestMethod]

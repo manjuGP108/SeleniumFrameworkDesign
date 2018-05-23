@@ -3,6 +3,7 @@
 <EAAutoFramework>
   <RunSettings>
     <AUT>http://toolsqa.com/automation-practice-form/</AUT>
+    <AJAX_Testing>http://shop.demoqa.com/</AJAX_Testing>
     <!-- Possible flag Chrome,Firefox, IE-->
     <Browser>Chrome</Browser>
     <!-- Possible flag Smoke, Regression, Unit  -->
@@ -16,5 +17,6 @@
     <UserName>EAutoTeam</UserName>
     <!-- Possible flag Selenium, Specflow  -->
     <Technology>Selenium</Technology>
+    <TimeOut>00</TimeOut>
   </RunSettings>
 </EAAutoFramework>

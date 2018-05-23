@@ -53,7 +53,7 @@ namespace SeleniumFrameWorkDesign.Base
         public void NavigateSite()
         {
             // Set URL
-            DriverContext.Browser.GoToUrl(Settings.AUT);
+            DriverContext.Browser.GoToUrl(Settings.AJAX_Testing);
         }
     }
 }

@@ -26,4 +26,10 @@ namespace SeleniumFrameWorkDesign.Base
         FireFox,
         Opera
     }
+
+    public enum Applications
+    {
+        ToolsQA,
+        AjaXTest
+    }
 }

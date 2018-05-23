@@ -12,8 +12,8 @@ namespace SeleniumFrameWorkDesign.Extentions
         {
             driver.WaitForCondition(drv =>
             {
-                var state = drv.ExecuteJs("return document.readyState").ToString();
-                return state == "complete";
+                var state = drv.ExecuteJs("return jQuery.active == 0");
+                return state.ToString() == "True";
             }, Settings.Timeout);
         }
 
@@ -33,14 +33,26 @@ namespace SeleniumFrameWorkDesign.Extentions
                 };
 
             var sw = Stopwatch.StartNew();
-            while (sw.ElapsedMilliseconds < timeOut)
+            while (sw.Elapsed.Milliseconds < timeOut)
                 if (execute(obj))
                     break;
         }
 
         internal static object ExecuteJs(this IWebDriver driver, string script)
         {
-            return (IJavaScriptExecutor)DriverContext.Driver;
+            return ((IJavaScriptExecutor)DriverContext.Driver).ExecuteScript(script);
+        }
+
+        public static void WaitForJQuerryToBeFinished(this IWebDriver driver)
+        {
+            var sw = Stopwatch.StartNew();
+            while (sw.Elapsed.Seconds < 120)
+            {
+                var state = DriverContext.Driver.ExecuteJs("return jQuery.active == 0");
+                var a = state.ToString();
+                if (state.ToString() == "True")
+                    break;
+            }
         }
     }
 }

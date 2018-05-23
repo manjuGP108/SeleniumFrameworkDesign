@@ -12,6 +12,8 @@ namespace SeleniumFrameWorkDesign.Config
 
         public static string AUT { get; set; }
 
+        public static string AJAX_Testing { get; set; }
+
         public static string BuildName { get; set; }
 
         public static BrowserType BrowserType { get; set; }
